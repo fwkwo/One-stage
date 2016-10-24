@@ -1,0 +1,657 @@
+*{margin: 0;padding: 0;}
+body{
+	background: #fff;
+	font: 14px/100% arial,"微软雅黑";
+}
+img{max-width:100% ;height: auto;display:inline-block;border:0px;}
+ul {padding: 0;margin: 0;list-style: none;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;zoom:1}
+.floatLeft{float: left;}
+.floatRight{float: right;}
+.textAlign{text-align: center;}
+a{text-decoration: none;}
+b,h1,h2,h3,h4,h5,h6{font-weight: normal;}
+/*公共部分
+*/
+/*header*/
+.header-bg{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	height: 61px;
+	font-size: 12px;
+}
+.header{
+	width: 1190px;
+	margin: auto;
+}
+/*设置首页*/
+.header-bg .setUp-home{
+    display: block;
+    float: left;
+    color: #fff;
+    background: #07ac72;
+    padding: 0.4% 0.4% 0.4% 0.5%;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 9px;
+    letter-spacing: 3px;
+}
+/*天气*/
+.header-weather .weather{
+	padding: 0 10px 0 10px;
+}
+.header-weather li,.login-box ul li{
+	line-height: 61px;	color: #999;
+	cursor: pointer;
+}
+.header-weather li a,.login-box ul li a{	
+	color: #999;
+}
+.header-weather .weather:hover{
+	background: #eee;
+}
+/*地区*/
+.weather .area{
+	padding-right: 10px;
+}
+.weather .area b{
+    background: rgba(0, 0, 0, 0) url(../img/index_widthlg.png) no-repeat scroll -52px -97px;
+    height: 6px;
+    margin-left: 4px;
+    vertical-align: middle;
+    width: 9px;
+    display: inline-block;
+}
+/*环境*/
+.header-weather li .science{
+    background: #ccc;
+    border-radius: 2px;
+    color: #fff;
+    margin-right: 5px;
+}
+/*天气变化情况*/
+.header-weather .temperature b{
+	background-image:url(../img/a1.png); 
+	background-position: 0 14px;
+    background-repeat: no-repeat;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    width: 26px;
+    display: inline-block;
+    margin-right: 4px
+}
+.header-weather .temperature span:first-child{
+	margin-right: 8px;
+}
+/*时间*/
+.date-box span{
+	display: inline-block;
+	padding:0 5px;
+}
+/*星座运势*/
+.constellation{
+	padding: 0 5px;
+}
+/*登录*/
+.login-box{
+	float: right;
+}
+.login-box .login{
+	 background-image: url("../img/index_widthlg.png");
+    background-position: -30px -110px;
+    background-repeat: no-repeat;
+    color: #999;
+    padding: 0 9px 0 33px;
+    position: relative;
+    z-index: 11;
+}
+.login-box .look{
+	position: relative;
+	padding-left: 22px;
+}
+.login-box .look b{
+    background: rgba(0, 0, 0, 0) url(../img/new_index_icon.png) no-repeat scroll -96px -46px;
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    top: 23px;
+    width: 15px;
+}
+.login-box li{
+	padding: 0 5px;
+}
+/*搜索框区域*/
+.search-box .search-main{
+	padding-top: 27px;
+}
+
+/*百度logo*/
+.baidu-logo{
+	height: 40px;
+    width: 120px;
+ 	margin: 4px 30px 0 166px;
+}
+.baidu-logo a{
+	background: rgba(0, 0, 0, 0) url("../img/index_widthlg.png") no-repeat scroll -10px -212px;
+	display: block;
+    height: 40px;
+    width: 120px;
+}
+/*搜索框*/
+.form-search{
+	height: 44px;
+    width: 538px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: #666 -moz-use-text-color #666 #666;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    position: relative;
+}
+.form-search .webpage{
+	position: absolute;
+	line-height: 44px;
+	color: #999;
+	font-size: 12px;
+	left: 10px;
+}
+.form-search .webpage i{
+	background: rgba(0, 0, 0, 0) url(../img/index_widthlg.png) no-repeat scroll -52px -97px;
+    height: 6px;
+    margin-left: 4px;
+    vertical-align: middle;
+    width: 9px;
+    display: inline-block;
+}
+.form-search input{
+	border: 0 none;
+    font: 16px arial;
+    height: 18px;
+    margin: 3px 30px 0 60px;
+    padding: 10px 0;
+    width: 448px;
+}
+.form-search input,.search .baidu-btn{outline:none; }
+.search .baidu-btn{
+	background: rgba(0, 0, 0, 0) url("../img/index_widthlg.png") no-repeat scroll -211px -180px;
+    height: 46px;
+    width: 120px;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+}
+/*颜色按钮*/
+.colour a{
+    display: inline-block;
+    padding: 10px 12px;
+    border: 1px solid #eee;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    text-align:center; 
+}
+.colour .red-btn{
+	background: #099e6a;
+}
+.colour .yellow-btn{
+	background: #ebb600;
+}
+.colour .blue-btn{
+	background: #1271f3;
+}
+/*搜索框导航条*/
+.search-nav{
+    width: 658px;
+    margin: auto;
+    padding: 10px 0 0 100px;
+}
+.search-nav li:first-child{
+	background: rgba(0, 0, 0, 0) url("../img/index_widthlg.png") no-repeat scroll -159px -260px;
+    color: #090;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 6px;
+    height: 20px;
+    margin-right: 5px
+}
+.search-nav li{
+	margin-right: 20px;    
+	float: left;
+}
+.search-nav li:last-child{
+	margin-right: 0px;
+}
+.search-nav li a{
+	color: #999;
+}
+.search-nav li .color-red{
+	color: #e60012;
+}
+/*主体内容区域*/
+.container{
+	margin-top: 20px;
+}
+.nav{
+	width: 100%;
+	border-top: 2px solid #099e6a;
+}
+/*导航*/
+.nav .nav-ul{
+	background: #099e6a;
+}
+.nav .nav-ul .home-nav{
+	width: 88px;
+}
+.nav .nav-ul .home{
+    background: #fff;
+}
+.nav .nav-ul li{
+	float: left;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-align: center;
+    width: 110px;
+    font-size: 16px;
+}
+.nav .nav-ul li a{
+	 color: #fff;
+	 display: block;
+}
+.nav .nav-ul .home a{
+    color: #099e6a;	
+
+}
+.nav .nav-ul li b{
+    background: rgba(0, 0, 0, 0) url(../img/menus_split.png) no-repeat scroll left center;
+    display: inline-block;
+    height: 40px;
+    width: 1px;
+    float: right;
+}
+/*首页更多导航条*/
+.nav-more{
+	border-left: 1px solid #84d7ba;
+	border-right: 1px solid #84d7ba;
+	border-bottom: 1px solid #84d7ba;
+	height: 36px;
+	line-height: 36px;
+}
+.nav-more li:first-child{
+	width: 88px;
+	margin: 0px;
+}
+.nav-more li{
+	float: left;
+	text-align: center;
+	margin:0 19px;
+}
+.nav-more li a{
+	color: #333;
+}
+.nav-more li a:hover,.tvPlay-ul li a:hover,.illegal a:hover{
+	color: #e60012;
+	text-decoration: underline
+}
+.nav-more li:first-child a{
+	color: #099e6a;	
+}
+/*内容*/
+.main{
+	margin-top: 10px;
+}
+/*左边内容*/
+.main .mainL{
+	width:280px;
+	float: left;
+	border:1px solid #ddd; 
+}
+.tvPlay{
+	padding: 9px 0 0 18px;
+}
+/*电视、综艺*/
+.tvPlay-ul{
+	border-bottom: 1px solid #ddd; 
+}
+.tvPlay-ul li{
+	width: 128px;
+	float: left;
+	margin-bottom: 10px;
+}
+.tvPlay-ul li a{
+    color: #333;
+    line-height: 17px;
+}
+.tvPlay-ul li em{
+	padding: 0 5px;
+    color: #999;
+}
+.tvPlay-ul li i{
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    background: url(../img/index_menus_widthlg.png) no-repeat;
+    float: left;
+}
+.tvPlay-ul .tv-icon{
+	background-position: -20px -81px;
+}
+.tvPlay-ul .game-icon{
+	background-position: -20px -302px;
+}    
+.tvPlay-ul .film-icon{
+	background-position: -20px -162px;
+}
+.tvPlay-ul .animation-icon{
+	background-position: -20px -381px;
+}
+/*违章*/
+.illegal {
+    padding: 10px 0;
+    display: block;
+}
+.illegal .x-nav{
+	display: inherit;
+	width: 20px;
+    height: 20px;
+    float: left;
+    background: red;
+    margin-top: -3px;
+    background: url(../img/index_menus_widthlg.png) no-repeat;
+    background-position: -20px -221px;
+    margin-right: 5px;
+}
+.illegal a{
+    width: 40px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    display: inline-block;
+}
+.illegal i{
+    display: inherit;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url(../img/new_index_icon.png) no-repeat -64px -22px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+/*推荐*/
+.recommend{
+
+}
+.re-nav {
+	background: #eee;
+}
+.re-nav ul{
+	float: left;	
+}
+.re-nav li b{
+    float: right;
+    color: #ddd;
+}
+.re-nav li{
+    float: left;
+    width: 52px;
+    text-align: center;
+    padding: 8px 0 10px;
+    border-top: 2px solid #eee;
+}
+.re-nav li a{
+	color: #616161;
+}
+.re-nav li:first-child{
+    border-top: 2px solid #099e6a;	
+}
+.re-nav li:first-child a,.re-nav li a:hover{
+	color: #099e6a;	
+}
+.re-nav span{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/new_index_icon.png) no-repeat -27px -5px;
+    cursor: pointer;
+    float: left;
+    margin-top: 11px;
+}
+.re-nav span:hover{
+	 background: url(../img/new_index_icon.png) no-repeat -44px -5px;
+}
+/*展示图片以及信息*/
+.img-main{
+	position: relative;
+}
+.img-main a{
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    background: url(../img/img_title_bg.png) repeat-x;
+    color: #fff;
+    width: 100%;
+    line-height: 30px;
+    text-align: center; 
+}
+.recommend-main ul{
+	padding:10px 0 10px 10px;
+}
+.recommend-main ul b{
+	background: #cecece;
+    width: 4px;
+    height: 4px;
+    margin-top: 12px;
+    display: inherit;
+    float: left;
+    margin-right: 5px;
+}
+.recommend-main ul li{
+	letter-spacing: 0.5px;
+}
+.recommend-main ul a{
+	line-height: 25px;
+	color: #333;
+}
+.exhibition{
+	height: 400px;
+	overflow-y: scroll;
+}
+/*右边内容*/
+.mainR{
+	width: 900px;
+	float: right;
+}
+/*各个网站*/
+.each-website{
+	border:1px solid #84d7ba;
+}
+.each-website .website-first {
+	width: 868px;
+    padding-left: 23px;
+    padding-top: 3px;
+}
+.each-website .website-first li,.each-website ol li{
+	width: 130px;
+    padding: 6px 4px 6px 9px;
+    float: left;
+    position: relative;
+    font-size: 14px;
+}
+.each-website .website-first li a:first-child{
+	padding-left: 25px;
+}
+.each-website .website-first li a{
+	display: inline-block;
+	line-height: 20px;
+	color: #333;
+}
+.each-website .website-first li a:hover{
+	color: #e60012;
+	text-decoration: underline;
+}
+/*各个网站图标*/
+.website-first .baid-icon{
+	background: url(../img/defaultIcon1229.png) no-repeat 2px -198px;
+}
+.website-first .sina{
+	background: url(../img/defaultIcon1229.png) no-repeat 2px -278px;
+}
+.sohu{
+	background: url(../img/defaultIcon1229.png) no-repeat 2px -318px;
+}
+.tencent{
+	background: url(../img/defaultIcon1229.png) no-repeat 2px -38px;
+}
+.netEase{
+	background:  url(../img/defaultIcon1229.png) no-repeat 2px -157px;
+}
+.youku{
+	background:  url(../img/defaultIcon1229.png) no-repeat 2px -398px;
+}
+.each-website .website-first li .tmall{
+	    background: url(../img/10138.png) no-repeat;
+}
+.weatherForecast{
+	position: absolute;
+	right: 22%;
+	top: 2%;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #fd6b00;
+}
+/*58同城*/
+.each-website ol{
+	list-style: none;
+	padding-left: 23px;
+    padding-top:15px;
+}
+.each-website ol a{
+	color: #333;
+}
+.each-website ol a:hover,.guessYouLike dl dd a:hover{
+	text-decoration: underline;
+	color: #e60012;
+}
+.each-website ol .lv-text{
+	padding-top: 10px;
+}
+.each-website ol .lv-text{
+	color: #84d7ba
+}
+/*导航*/
+.nav-mainR{
+	padding:1% 5%;
+}
+.nav-mainR a{
+	color:#3b5998;
+	padding: 0 1%;
+	font-size: 12px;
+}
+.nav-mainR .color{
+	color: #e60012;
+}
+/*猜你喜欢*/
+.guessYouLike{
+	border:1px solid #ddd;
+	position: relative;
+	padding: 9px 0;
+}
+.guessYouLike span{
+	width: 20px;
+    height: 65px;
+    display: block;
+    background: url(../img/new_index_icon.png)no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: 10;
+}
+.guessYouLike dl,.play dl{
+	padding: 0 0 0 35px;
+}
+.guessYouLike dl dt,.play dl dt{
+	float: left;
+	width: 40px;
+	line-height: 32px;
+	position: relative;
+}
+.guessYouLike dl dt i{
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	width: 7px;
+	height: 7px;
+	background: #e83f05;
+	border-radius: 50%;
+}
+.guessYouLike dl dt a:hover{
+	text-decoration: underline;
+}
+.guessYouLike dl dt a,.play dl dt a{
+	color: #0aa770;
+}
+.guessYouLike dl dd{
+	width: 102px;
+	text-align: center;
+    padding: 0;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    float: left;
+}
+.guessYouLike dl dd a,.play dl dd a{
+	color: #333;
+}
+.guessYouLike dl:hover{
+	background: #ededed;
+}
+/*play推荐的各类网站*/
+.play{
+	margin-top: 10px;
+    padding-top: 0px;
+    border:1px solid #ddd; 
+}
+.play-nav{
+	border-bottom: 1px solid #ddd;
+}
+.play-nav li:first-child{
+	padding: 0 29px;
+}
+.play-nav li{
+	float: left;
+	text-align:center; 
+	height: 33px;
+    line-height: 33px;
+    padding: 0 21px;
+}
+.play-nav li a{
+	color: #0aa770;
+}
+.play-nav li a:hover{
+	text-decoration: underline;
+}
+.play dl dd{
+	padding: 0 9px;
+	text-align:center;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    display: inline-block;
+}

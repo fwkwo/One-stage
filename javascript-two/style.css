@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding: 0;
+}
+div{
+	margin: 20px
+}
+h5 {
+    padding: 1% 0;
+}
+input[type="text"]{
+	border:1px solid #999;
+	height: 30px;
+	text-indent: 10px;
+}
+select#method {
+    height: 33px;
+    width: 10%;
+}
+#btn{
+    width: 12%;
+    height: 30px;
+    background: #e60012;
+    color: #fff;
+    border: 1px solid #e60012;
+}
+#result{
+	font-weight: normal;
+	color: #e60012;
+}
